@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="5-style.css">
+</head>
+<body>
+    <style>
+        #f::before{
+            content: "the start of the graph to check pseudo elenents ";
+            color: blueviolet;
+        }
+        h1::after{
+            content: "pseudo element after";
+            color: red;
+        }
+        #s::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        label:hover{
+            background-color: rgba(255, 255, 0, 0.658);
+        }
+        input:active{
+            background-color: blueviolet;
+        }
+        button:active{
+            border: 2px solid red;
+            color: blue;
+        }
+    </style>
+    <h1>pseudo elements and class</h1>
+    <p id="f">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum perspiciatis laboriosam aspernatur dolores! Quis.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, aspernatur!</p><br><br><br><br><br><br><br><br>
+    <label for="">User Name:</label>
+    <input type="text"><br><br>
+    <a href="#f">First para</a>
+    <br><br>
+    <button>CLICK</button>
+    </body>
+</html>
